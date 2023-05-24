@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                <form (submit)="login($event)">
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="correo" name="correo" class="form-control" placeholder="Correo"
+                            required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="clave" name="clave" class="form-control" placeholder="Clave"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
